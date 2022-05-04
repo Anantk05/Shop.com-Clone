@@ -176,8 +176,6 @@ textarea::placeholder{
     background-color: #202340;
     color: white;
 }
-
-
 #item_box{
     border: 2px solid red;
     margin: 15px 20px 20px 15px;

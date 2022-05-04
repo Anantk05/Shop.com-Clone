@@ -4,10 +4,10 @@
         Team Members
 
         1. Dipak pawar  
-                    -->(Homepage)
+                    -->(Navbar & Cartpage)
 
         2. Chandan singh
-                    -->(Navbar & Cartpage)
+                    -->(Homepage)
 
         3. Anant Kumar
                     -->(Productspage - mens & womens)
