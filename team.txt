@@ -1,9 +1,18 @@
 
-        Team Name
+    Project Name - Shop.com
 
-        1. Dipak pawar
+        Team Members
+
+        1. Dipak pawar  
+                    -->(Homepage)
+
         2. Chandan singh
+                    -->(Navbar & Cartpage)
+
         3. Anant Kumar
+                    -->(Productspage - mens & womens)
+
         4. Sandhya potadar
+                    -->(Signup & Loginpage)
 
 
