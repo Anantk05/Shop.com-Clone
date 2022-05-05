@@ -50,7 +50,7 @@ text-decoration: none;
 #row1{
       height: 50%;
       width: 100%;
-      /* border: 1px solid blue; */
+      border: 1px solid blue;
     
 }
 #row2{
@@ -67,12 +67,12 @@ text-decoration: none;
 #categ{
       width: 20%;
       height: 100%;
-      /* border: 1px solid green; */
+      border: 1px solid green;
 }
 #Homeitem{
       display: flex;
       width: 45%;
-      /* border: 1px solid green; */
+      border: 1px solid rgb(0, 0, 0);
       height: 100%;
       justify-content: space-between;
       margin-left: 30px;
@@ -87,7 +87,7 @@ text-decoration: none;
         }
 #icon{
       width: 30%;
-      /* border: 1px solid green; */
+      border: 1px solid green;
       height: 100%;
       justify-content: space-around;
 }
@@ -120,3 +120,48 @@ text-decoration: none;
       /* background-color: red; */
       border-radius: 20px;
 }
+
+@media all and (min-width:500px) and (max-width:850px){
+      #Homeitem{
+            display: none;
+            font-size: 70px;
+      
+      }
+      
+      #row2{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            vertical-align: middle;
+            margin: auto;
+            border: 1px solid #000;
+            
+      }
+      #startbar{
+            width:100%;
+            height: 60px;
+            background-color: #202340;
+            text-align: center;
+            color: white;
+            display: none;
+         
+      }
+      #row1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+      }
+      
+      #row1>DIV>img{
+            height: 50%;
+            width: 100%;
+            /* border: 1px s/lid rgb(0, 0, 0); */     
+      }
+      #row1{
+            height: 50%;
+            width: 100%;
+            border: 1px solid blue;
+          
+      }
+      }
