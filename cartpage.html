@@ -7,7 +7,7 @@
       <title>Document</title>
       <link rel="stylesheet" href="cart.css">
       <link rel="stylesheet" href="nav.css">
-      
+      <link rel="stylesheet" href="cart2responsive.css">
 </head>
 <body>
       <nav id="nav"> 
@@ -30,43 +30,96 @@
                 </div>
                 <div id="icon">
                       <div><a href=""><img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt=""></a></div>
-                      <div><a href=""><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt=""></a></div>
+                      <div><a id="account" href=""><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt=""></a></div>
                       <div><a href="cartpage.html" target="_blank"><img  src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg" alt=""></a></div>
                 </div>
            </div>
       
       </nav>
-      <div id="container" >
-            <div id="selected">
-              <div>Your cart</div> 
-            </div>
+
+      <div id="container">
+                     <div id="left">
+                           <div id="ltital">Your Items</div>
+                           
+                           
+                           <div id="proboundary">
+                                 <div class= "Probox">
+                                       <div class="proleft">
+
+
+                                       </div>
+                                       <div class="proright"></div>
+                                       
+                                 </div>
+                                 <div class= "Probox">
+                                    <div class="proleft">
+
+
+                                    </div>
+                                    <div class="proright"></div>
+                                    
+                              </div>
+                              
 
 
 
-         <div id="prodetails">
-               <div>img product</div>
-               <div>product details</div>
-         </div>
-
-
-         <div id="subtotal">
-               <div>Subtotal</div>
-               <div id="subprize">
-d
-               </div>
-            </div>
-         
-      <!-- button portion -->
-         <div id="proceed">
-               <input type="submit" value="Proceed to Checkout">
-         </div>
 
 
 
-         <div id="continue">
-               <button>Continue Shoping</button>
-         </div>
+                           </div>
+                           <div id="ortotal">
+                                 <h3>Order Total: </h3>
+                                 <div id="showtotal"></div>
+                           </div>
 
+
+
+                     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     <div id="right">
+
+                        <div id="ordersub">
+
+                        </div>
+
+
+
+
+
+                        <div id="proceed" >
+                              <div><a href="payment.html">
+                                    <input type="submit" value="Proceed to Checkout" >
+                                   </a>
+                              </div> 
+                         </div>
+                
+                
+                
+                         <div id="continue">
+                               <div><button>Continue Shoping</button></div>
+                               
+                         </div>
+
+                     </div>
       </div>
 </body>
 </html>

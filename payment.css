@@ -1,13 +1,17 @@
  p{
       font-size: 16px;
+      margin-top: 20px;
       margin-bottom: 5px;
       font-family: sans-serif;
-      font-weight: 550;
+      /* font-weight: 300; */
+      /* font-family: 'Gothic A1', sans-serif; */
+font-family: 'Roboto', sans-serif;
+/* font-family: 'Roboto Mono', monospace; */
  }
  
                    /* complet page */
 #mainpage{
-      width: 55%;
+      width: 65%;
       height: auto;
       border: 1px solid black;
       margin: auto;
@@ -83,7 +87,7 @@
       width: 40%; 
 }
 #cardvalue>input{
-      padding: 10px;
+      padding: 1px;
       /* padding-left: 60px; */
       width: 40%;
       border-radius: 5px;
@@ -91,11 +95,15 @@
 }
                                    /* card logos */
 #cardvalue>div>img{
-      width: 50px;
+      width: 30px;
       height: 30px;
       margin-left: 5px;
       border-radius: 10px;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#cardvalue>div{
+      width: 200px;
 }
                                   /* expiry Details */
 #expirydetails{
@@ -141,7 +149,7 @@
       margin-top: 20px;
 }
 #total>p{
-      font-size: 28px;
+      font-size: 22px;
 }
                                  /* checkbox */
 #checkbox{
@@ -191,3 +199,5 @@
       color: white;
       
 }
+
+
