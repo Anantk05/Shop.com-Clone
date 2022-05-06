@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men at SHOP.COM Clothes</title>
+    <link rel="icon" href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg" type="icon">
+    <link rel="stylesheet" href="menspage.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        </style>
+</head>
+<body>
+    <p class="cursor page_info">
+        <span class="page_info">SHOP.COM <span class="separator">></span> Clothes <span class="separator">></span> Men </span>
+        <span class="page_exiter">✕</span>
+    </p>
+    <div class="product_sorting">
+        <span class="sorting_text cursor">Sort:</span>
+        <span>
+            <select class="sorting_button cursor" id="for_sorting">
+                <option value="none">Best Match</option>
+                <option value="price_high-low">Price High-Low</option>
+                <option value="price_low-high">Price Low-High</option>
+                <option value="most_cashback">Most Cashback</option>
+            </select>
+        </span>
+    </div>
+    <div id="mainbody">
+        <div>
+                    <!-- Check Search Items -->
+            <div class="one_cart_logo hover">
+                <input type="checkbox">
+                <img class="cursor" src="https://img.shop.com/Image/resources/images/onecart-logo_icon.svg" alt="one_cart_logo">
+                <span class="count cursor">(47,207)</span>
+            </div>
+            <div id="category_list">
+                <div class="check_items">
+                    <div>
+                        <input type="checkbox">
+                        <p class="cursor hover">Sale items <span class="count cursor">(79,207)</span></p>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <p class="cursor">Shipping Offers 
+                            <span class="info_logo"><img src="https://cdn-icons-png.flaticon.com/128/189/189664.png" alt="info_logo"></span>
+                            <span class="count cursor hover">(41,269)</span>
+                        </p>
+                    </div>
+                    
+                </div>
+                    <!-- Category List  -->
+                <div class="category_type_margin">
+                    <button class="expanded_button">Men's Clothing Type</button>
+                    <ul class="list_items">
+                        <li class="hover cursor ">Shirts <span class="count">(58,291)</span></li>
+                        <li class="hover cursor ">Activewear <span class="count">(20,100)</span></li>
+                        <li class="hover cursor ">Pants <span class="count">(9,316)</span></li>
+                        <li class="hover cursor ">Jeans <span class="count">(9,295)</span></li>
+                        <li class="hover cursor ">Shorts <span class="count">(8,591)</span></li>
+                        <li class="hover cursor ">Jackets & Coats <span class="count">(7,564)</span></li>
+                        <li class="hover cursor ">Suits & Separates <span class="count">(4,274)</span></li>
+                        <li class="hover cursor ">Socks <span class="count">(2,720)</span></li>
+                        <li class="hover cursor ">Sleepwear <span class="count">(3,022)</span></li>
+                        <li class="hover cursor ">Sweaters <span class="count">(2,705)</span></li>
+                        <li class="hover cursor ">+ See More </li>
+                    </ul>
+                </div>
+                <div class="category_type_margin">
+                    <button class="expanded_button">Fabric</button>
+                    <ul class="list_items">
+                        <li class="hover cursor ">Cotton & Blends <span class="count">(69,962)</span></li>
+                        <li class="hover cursor ">Polyester <span class="count">(40,403)</span></li>
+                        <li class="hover cursor ">Fleece <span class="count">(5,438)</span></li>
+                        <li class="hover cursor ">Nylon <span class="count">(4,861)</span></li>
+                        <li class="hover cursor ">Wool <span class="count">(4,417)</span></li>
+                        <li class="hover cursor ">Denim <span class="count">(3,249)</span></li>
+                        <li class="hover cursor ">Knit <span class="count">(1,607)</span></li>
+                        <li class="hover cursor ">Linen <span class="count">(958)</span></li>
+                        <li class="hover cursor ">Silk <span class="count">(927)</span></li>
+                        <li class="hover cursor ">Leather <span class="count">(898)</span></li>
+                        <li class="hover cursor ">+ See More </li>
+                    </ul>
+                </div>
+                <div class="category_type_margin">
+                    <button class="expanded_button">Color </button>
+                    <ul class="list_items">
+                        <li class="hover cursor ">Biege <span class="count">(4,638)</span></li>
+                        <li class="hover cursor ">Black <span class="count">(28,724)</span></li>
+                        <li class="hover cursor ">Blue <span class="count">(31,083)</span></li>
+                        <li class="hover cursor ">Brown <span class="count">(4,014)</span></li>
+                        <li class="hover cursor ">Gray <span class="count">(12,784)</span></li>
+                        <li class="hover cursor ">Green <span class="count">(9,005)</span></li>
+                        <li class="hover cursor ">Navy <span class="count">(2,320)</span></li>
+                        <li class="hover cursor ">Orange <span class="count">(2,226)</span></li>
+                        <li class="hover cursor ">Pink <span class="count">(2,562)</span></li>
+                        <li class="hover cursor ">Red <span class="count">(7,888)</span></li>
+                        <li class="hover cursor ">+ See More </li>
+                    </ul>
+                </div>
+                <div class="category_type_margin">
+                    <button class="expanded_button">Men's Shirt Type</button>
+                    <ul class="list_items">
+                        <li class="hover cursor ">T-Shirts <span class="count">(30,776)</span></li>
+                        <li class="hover cursor ">Polos <span class="count">(3,947)</span></li>
+                        <li class="hover cursor ">Dress Shirts <span class="count">(2,521)</span></li>
+                        <li class="hover cursor ">Western <span class="count">(933)</span></li>
+                        <li class="hover cursor ">Tank tops <span class="count">(913)</span></li>
+                        <li class="hover cursor ">Henleys <span class="count">(843)</span></li>
+                        <li class="hover cursor ">Turtlenecks <span class="count">(408)</span></li>
+                        <li class="hover cursor ">Casual Button-Up Shirts <span class="count">(274)</span></li>
+                        <li class="hover cursor ">Rugby Shirts <span class="count">(247)</span></li>
+                        <li class="hover cursor ">Topical & Hawaiian Shirts <span class="count">(167)</span></li>
+                    </ul>
+                </div>
+                <div class="category_type_margin">
+                    <button class="expanded_button">Size </button>
+                    <ul class="list_items">
+                        <li class="hover cursor ">2X <span class="count">(11,728)</span></li>
+                        <li class="hover cursor ">3X <span class="count">(4,792)</span></li>
+                        <li class="hover cursor ">4X <span class="count">(1,642)</span></li>
+                        <li class="hover cursor ">5X <span class="count">(960)</span></li>
+                        <li class="hover cursor ">Child 5 <span class="count">(2,370)</span></li>
+                        <li class="hover cursor ">L <span class="count">(15,600)</span></li>
+                        <li class="hover cursor ">M <span class="count">(9,323)</span></li>
+                        <li class="hover cursor ">S <span class="count">(9,898)</span></li>
+                        <li class="hover cursor ">XL <span class="count">(6,628)</span></li>
+                        <li class="hover cursor ">XS <span class="count">(2,532)</span></li>
+                        <li class="hover cursor ">+ See More </li>
+                    </ul>
+                </div>
+                <div class="category_type_margin">
+                    <button class="expanded_button">Men,s Sleeve Length </button>
+                    <ul class="list_items">
+                        <li class="hover cursor ">Short <span class="count">(27,090)</span></li>
+                        <li class="hover cursor ">Long <span class="count">(11,083)</span></li>
+                        <li class="hover cursor ">Sleeveless <span class="count">(817)</span></li>
+                    </ul>
+                </div>
+                <div class="category_type_margin">
+                    <button class="expanded_button">Men's T-Shirt Type </button>
+                    <ul class="list_items">
+                        <li class="hover cursor ">Cartoons & Animation <span class="count">(11,728)</span></li>
+                        <li class="hover cursor ">Plain <span class="count">(4,792)</span></li>
+                        <li class="hover cursor ">Logos & Brand Names <span class="count">(1,642)</span></li>
+                        <li class="hover cursor ">Animals <span class="count">(960)</span></li>
+                        <li class="hover cursor ">Holidays, Events & Special Occasions <span class="count">(2,370)</span></li>
+                        <li class="hover cursor ">States, Countries & Nationalities <span class="count">(15,600)</span></li>
+                        <li class="hover cursor ">Tie-Dyed <span class="count">(9,323)</span></li>
+                        <li class="hover cursor ">Family & Friends <span class="count">(9,898)</span></li>
+                        <li class="hover cursor ">Food & Drink <span class="count">(6,628)</span></li>
+                        <li class="hover cursor ">Flowers <span class="count">(2,532)</span></li>
+                        <li class="hover cursor ">+ See More </li>
+                    </ul>
+                </div>
+                <div class="category_type_margin">
+                    <button class="expanded_button">Men's Activewear Type </button>
+                    <ul class="list_items">
+                        <li class="hover cursor ">Hoodies <span class="count">(7,290)</span></li>
+                        <li class="hover cursor ">Sweatshirts <span class="count">(3,463)</span></li>
+                        <li class="hover cursor ">Shorts <span class="count">(1,977)</span></li>
+                        <li class="hover cursor ">T-Shirts <span class="count">(1,001)</span></li>
+                        <li class="hover cursor ">Track Suits <span class="count">(826)</span></li>
+                        <li class="hover cursor ">Pants <span class="count">(726)</span></li>
+                        <li class="hover cursor ">Jackets <span class="count">(571)</span></li>
+                        <li class="hover cursor ">Windshirts <span class="count">(7)</span></li>
+                    </ul>
+                </div>
+                <div class="category_type_margin">
+                    <button class="expanded_button">Special Size </button>
+                    <ul class="list_items">
+                        <li class="hover cursor ">Any Size <span class="count">(131,983)</span></li>
+                        <li class="hover cursor ">Big & Tall <span class="count">(7,713)</span></li>
+                        <li class="hover cursor ">Husky <span class="count">(34)</span></li>
+                        <li class="hover cursor ">Juniors <span class="count">(38)</span></li>
+                        <li class="hover cursor ">Petite <span class="count">(239)</span></li>
+                        <li class="hover cursor ">Plus <span class="count">(935)</span></li>
+                        <li class="hover cursor ">Young Men <span class="count">(93)</span></li>
+                    </ul>
+                </div>
+                <div class="category_type_margin">
+                    <button class="expanded_button">Men's Jackets & Coat Type </button>
+                    <ul class="list_items">
+                        <li class="hover cursor ">Jackets <span class="count">(4,811)</span></li>
+                        <li class="hover cursor ">Coats <span class="count">(1,594)</span></li>
+                        <li class="hover cursor ">Vests <span class="count">(680)</span></li>
+                        <li class="hover cursor ">Rainwear <span class="count">(459)</span></li>
+                        <li class="hover cursor ">Cloaks, Capes & Ponchos <span class="count">(18)</span></li>                            
+                    </ul>
+                </div>
+                <div class="category_type_margin">
+                    <button class="expanded_button">Men's Pants Type </button>
+                    <ul class="list_items">
+                        <li class="hover cursor ">Chino & Khaki <span class="count">(2,560)</span></li>
+                        <li class="hover cursor ">Casual <span class="count">(2,436)</span></li>
+                        <li class="hover cursor ">Slacks & Trousers <span class="count">(1,066)</span></li>
+                        <li class="hover cursor ">Cargo <span class="count">(876)</span></li>
+                    </ul>
+                </div>
+                <div class="category_type_margin">
+                    <button class="expanded_button">Men's Suits & Separates Type </button>
+                    <ul class="list_items">
+                        <li class="hover cursor ">Suits <span class="count">(1,615)</span></li>
+                        <li class="hover cursor ">Blazers <span class="count">(1,678)</span></li>
+                        <li class="hover cursor ">Sport Coats <span class="count">(749)</span></li>
+                        <li class="hover cursor ">Vests <span class="count">(221)</span></li>
+                    </ul>
+                </div>
+                <div class="category_type_margin">
+                    <button class="expanded_button">Men's Shorts Type </button>
+                    <ul class="list_items">
+                        <li class="hover cursor ">Cargo <span class="count">(3,675)</span></li>
+                        <li class="hover cursor ">Denim <span class="count">(427)</span></li>
+                        <li class="hover cursor ">Pleated <span class="count">(96)</span></li>
+                        <li class="hover cursor ">Bermuda <span class="count">(74)</span></li>
+                    </ul>
+                </div>
+                <div class="category_type_margin">
+                    <button class="expanded_button">Men's Activewear Sport Type </button>
+                    <ul class="list_items">
+                        <li class="hover cursor ">Golf <span class="count">(2,122)</span></li>
+                        <li class="hover cursor ">Basketball <span class="count">(322)</span></li>
+                        <li class="hover cursor ">Tennis <span class="count">(234)</span></li>
+                        <li class="hover cursor ">Running <span class="count">(192)</span></li>
+                        <li class="hover cursor ">Baseball <span class="count">(167)</span></li>
+                        <li class="hover cursor ">Cycling <span class="count">(158)</span></li>
+                        <li class="hover cursor ">Excercise & Fitness <span class="count">(123)</span></li>
+                        <li class="hover cursor ">Camping, Hiking & Climbing <span class="count">(91)</span></li>
+                        <li class="hover cursor ">Yoga <span class="count">(61)</span></li>
+                        <li class="hover cursor ">Football <span class="count">(58)</span></li>
+                        <li class="hover cursor ">+ See More </li>
+                    </ul>
+                </div>
+                <div class="category_type_margin">
+                    <button class="expanded_button">Men's Underwear Type </button>
+                    <ul class="list_items">
+                        <li class="hover cursor ">Boxer Briefs <span class="count">(1,130)</span></li>
+                        <li class="hover cursor ">Thermal & Long Underwear <span class="count">(489)</span></li>
+                        <li class="hover cursor ">Briefs <span class="count">(291)</span></li>
+                        <li class="hover cursor ">Boxers <span class="count">(249)</span></li>
+                        <li class="hover cursor ">Trunks <span class="count">(176)</span></li>
+                        <li class="hover cursor ">Undershirts <span class="count">(67)</span></li>
+                        <li class="hover cursor ">Thongs & G-Strings <span class="count">(1)</span></li>
+                    </ul>
+                </div>
+                <div class="category_type_margin">
+                    <button class="expanded_button">Men's Sleepwear Type </button>
+                    <ul class="list_items">
+                        <li class="hover cursor ">Pajamas <span class="count">(1,778)</span></li>
+                        <li class="hover cursor ">Robes <span class="count">(395)</span></li>
+                        <li class="hover cursor ">Sleep Shorts & Boxers <span class="count">(36)</span></li>
+                    </ul>
+                </div>
+                <div class="category_type_margin">
+                    <button class="expanded_button">Men's Swimwear Type </button>
+                    <ul class="list_items">
+                        <li class="hover cursor ">Trunks <span class="count">(1,469)</span></li>
+                        <li class="hover cursor ">Board shorts <span class="count">(560)</span></li>
+                        <li class="hover cursor ">Rash Grards <span class="count">(104)</span></li>
+                        <li class="hover cursor ">Briefs <span class="count">(19)</span></li>
+                    </ul>
+                </div>
+                <div class="category_type_margin">
+                    <button class="expanded_button">Brand </button>
+                    <ul class="list_items">
+                        <li class="hover cursor ">Levi's <span class="count">(4,976)</span></li>
+                        <li class="hover cursor ">St. John <span class="count">(2,760)</span></li>
+                        <li class="hover cursor ">Dockers <span class="count">(2,326)</span></li>
+                        <li class="hover cursor ">Croft & Barrow <span class="count">(2,372)</span></li>
+                        <li class="hover cursor ">Arizona <span class="count">(2,285)</span></li>
+                        <li class="hover cursor ">Tommy Hilfiger <span class="count">(2,172)</span></li>
+                        <li class="hover cursor ">Nike <span class="count">(1,960)</span></li>
+                        <li class="hover cursor ">Star Wars <span class="count">(1,780)</span></li>
+                        <li class="hover cursor ">Henes <span class="count">(1,771)</span></li>
+                        <li class="hover cursor ">Xersion <span class="count">(1,739)</span></li>
+                        <li class="hover cursor ">+ See More </li>
+                    </ul>
+                </div>
+                <div class="category_type_margin">
+                    <button class="expanded_button">Store </button>
+                    <ul class="list_items">
+                        <li class="hover cursor ">JCPenney <span class="count">(35,253)</span></li>
+                        <li class="hover cursor ">Kohl's <span class="count">(26,039)</span></li>
+                        <li class="hover cursor ">Macy's <span class="count">(21,307)</span></li>
+                        <li class="hover cursor ">Fifth Sun <span class="count">(8,206)</span></li>
+                        <li class="hover cursor ">Tags Weekly <span class="count">(7,498)</span></li>
+                        <li class="hover cursor ">BOBBY + BRICA <span class="count">(6,613)</span></li>
+                        <li class="hover cursor ">Azura Runway <span class="count">(5,803)</span></li>
+                        <li class="hover cursor ">Pertemba US <span class="count">(5,397)</span></li>
+                        <li class="hover cursor ">GILT <span class="count">(3,181)</span></li>
+                        <li class="hover cursor ">Rue La La <span class="count">(3,158)</span></li>
+                        <li class="hover cursor ">+ See More </li>
+                    </ul>
+                </div>
+                <div class="category_type_margin">
+                    <button class="expanded_button">Price Range </button>
+                    <ul class="list_items">
+                        <li class="hover cursor ">$20.00 and Below <span class="count">(48,399)</span></li>
+                        <li class="hover cursor ">$20.01 - $30.00 <span class="count">(32,235)</span></li>
+                        <li class="hover cursor ">$30.01 - $45.00 <span class="count">(25,649)</span></li>
+                        <li class="hover cursor ">$45.01 - $80.00 <span class="count">(19,135)</span></li>
+                        <li class="hover cursor ">$80.01 and Above <span class="count">(17,512)</span></li>
+                        <li>
+                            <span class="custom_price_range">
+                            <input type="number" placeholder="Min"> 
+                            <input type="number" placeholder="Max">
+                            <button class="cursor">></button></span>
+                        </li>
+                    </ul>
+                    <div>
+
+                    </div>
+                </div>
+                <div class="category_type_margin" id="feedback_form">
+                    <p>Tell us how we are doing</p>
+                    <p>We constantly strive to improve the customer experience and we value your feedback.</p>
+                    <div >
+                        <textarea aria-label="Enter feedback here..." placeholder="Enter feedback here. Include your email address if you would like to be contacted." rows="7"></textarea>
+                    </div>
+                    <a href="">Submit feedback</a>
+                </div>
+
+            </div>
+        </div>
+        <div id="products_container">
+            
+        </div>
+
+    </div>
+</body>
+</html>
+
+<!-- Script Page  -->
+
+<script src="menspage.js"></script>
