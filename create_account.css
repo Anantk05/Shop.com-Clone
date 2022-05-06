@@ -1,6 +1,8 @@
-h1{
+#submain>h1{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: bold;
     
 }
 #submain{
@@ -12,7 +14,7 @@ h1{
 }
 input{
  padding: 10px;
- font-style:italic;
+ /* font-style:italic; */
 }
 .name{
  display: grid;
@@ -34,6 +36,7 @@ font-size: 12px;
  display: flex;
  justify-content: space-between;
  margin-bottom: 20px;
+ margin-top: 10px;
 }
 .mail{
  display: grid;
@@ -69,10 +72,12 @@ font-size: 12px;
  font-size: 12px;
  
 }
-h2{
+.al{
  font-family: Arial, Helvetica, sans-serif;
  font-size: 18px;
-    color: rgb(78, 74, 74);
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 #thirdsubmain{
  margin-bottom: 35px;
@@ -82,16 +87,27 @@ h2{
  padding: 10px;
  font-family: Arial, Helvetica, sans-serif;
  font-size: 12px;
+ width: 95%;
 }
-span+input{
+
+#Reffer{
 display: block;
-width: 95%;
+width:200%;
 }
+
 #head{
  margin-top: 40px;
  font-size: 20px;
  
 }
+#head>h2{
+    font-family: Arial, Helvetica, sans-serif;
+ font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    font-weight: bold;  
+}
+
 .robort{
  margin-top: 30px;
  font-family: Arial, Helvetica, sans-serif;
@@ -108,13 +124,19 @@ width: 95%;
  font-family: Arial, Helvetica, sans-serif;
  font-size: 14px;
 
+
 }
 #capcha>#cap{
- width: 40px;
- margin-left: 50px;
+ width: 38px;
+ height: 38px;
+ margin: auto;
 }
 #capcha>#robocheck{
- margin: auto;
+margin: auto;
+}
+#capcha>p{
+    font-size: 15px;
+    margin: auto;
 }
 
 #submit{
@@ -140,3 +162,56 @@ width: 95%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
 }
+
+/* here */
+
+/* here */
+
+#header{
+    position: relative;
+}
+#submain{
+    position: absolute;
+    top:30%;
+    left: 22%;
+  
+}
+
+/* p */
+
+.css-tooltip{
+    position: relative;
+    
+  }
+  .css-tooltip:hover:after{
+    content:attr(data-tooltip);
+    background:rgb(25, 23, 23);
+    padding:5px;
+    border-radius:3px; 
+    display: inline-block;
+    position: absolute;
+    transform: translate(-50%,-100%); 
+    margin:0 auto;
+    color:#FFF;
+    min-width:100px;
+    min-width:150px;
+    top:-5px;
+    left: 50%;
+    text-align:center;
+  }
+  .css-tooltip:hover:before {
+    top:-5px;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(0, 0, 0, 0);
+    border-top-color: #000;
+    border-width: 5px;
+    margin-left: -5px;
+    transform: translate(0,0px); 
+  }
+  

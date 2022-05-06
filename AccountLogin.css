@@ -1,0 +1,102 @@
+#main{
+    width: 50%;
+    /* border: 1px solid chartreuse; */
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main>h2{
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+#submain{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    
+}
+input{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+label{
+    font-size: 12px;
+}
+#submail{
+/* border: 1px solid violet; */
+width: 45%;
+
+}
+#info{
+
+/* border: 1px solid rgb(52, 52, 149); */
+width: 45%;
+}
+.mail{
+display: grid;
+
+}
+.pass{
+display: grid;
+
+}
+#info>p{
+font-size: 12px;
+
+}
+#info>h2{
+font-size: 16px;
+font-weight: normal;
+
+}
+#submit{
+width: 100%;
+background-color: #2b2f59;
+color: white;
+font-weight: bold;
+}
+
+button{
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+.css-tooltip{
+  position: relative;
+  
+}
+.css-tooltip:hover:after{
+  content:attr(data-tooltip);
+  background:rgb(145, 10, 10);
+  padding:5px;
+  border-radius:3px; 
+  display: inline-block;
+  position: absolute;
+  transform: translate(-50%,-100%); 
+  margin:0 auto;
+  color:#FFF;
+  min-width:100px;
+  min-width:150px;
+  top:-5px;
+  left: 50%;
+  text-align:center;
+}
+.css-tooltip:hover:before {
+  top:-5px;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(0, 0, 0, 0);
+  border-top-color: #000;
+  border-width: 5px;
+  margin-left: -5px;
+       transform: translate(0,0px); 
+}
