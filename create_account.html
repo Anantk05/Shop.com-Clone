@@ -4,10 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="create.css" />
+    <link rel="stylesheet" href="create_account.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <title>Document</title>
 </head>
 <body>
+
+    <div id="header">
+        <div id="startbar">
+            <Div>
+             <div id="text">Shopping Made Easy Buy Now,Pay Later With Sezzle <span><a href="https://www.shop.com/Sezzle-v.xhtml"> &nbsp;   See details</a>  </span></div>
+            
+            </Div>
+      </div>
+      <nav id="nav"> 
+            <div id="row1">
+                <DIV> <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt=""></DIV>
+                <DIV>
+                     <input type="text" placeholder="  &nbsp; Search In Shop.com"> 
+                     <div><img src="https://img.shop.com/Image/resources/images/icon-search-24px.svg" alt=""></div>
+            </DIV>
+                <DIV><img src="https://img.shop.com/Image/header2013/motives-usa-can-100110-sculpting-concealer-banners-header1650486339409.svg" alt=""></DIV>
+           </div>
+           <div id="row2">
+                <div id="categ"> <img src="https://img.shop.com/Image/resources/images/icon-menu-24px.svg" alt=""></div>
+                <div id="Homeitem"> 
+                      <p><a href="https://www.shop.com/info/our-brands?hsh=1" target=" _blank">Exclusive Brands</a> </p>
+                      <p><a href="https://www.shop.com/stores-a-z?hsh=2" target=" _blank">Stores</a> </p>
+                      <p><a href="https://www.shop.com/hot-deals?hsh=3" target=" _blank">Deals</a> </p>
+                      <p><a href="https://www.shop.com/shoptravel?tsid=1&hsh=4" target=" _blank">SHOP Travel</a> </p>
+                      <p><a href="https://www.shop.com/departments.xhtml?hsh=5" target=" _blank">Departments</a> </p>
+                </div>
+                <div id="icon">
+                      <div><a href=""><img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt=""></a></div>
+                      <div><a id="account" href=""><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt=""></a></div>
+                      <div><a href="cartpage.html" target="_blank"><img  src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg" alt=""></a></div>
+                </div>
+           </div>
+      
+      </nav>
+    
+    </div>
+
+
+
+    <!-- put here navbar code -->
     <div id="submain">
        <h1>Create an account</h1>
        <p>* indicate required field</p>
@@ -16,11 +66,11 @@
            <div id="frstform">
             <label class="name" >
                 First name*
-                <input id="fname" type="text" placeholder="first name here">
+                <input id="fname"  class="css-tooltip"  data-toggle="tooltip" title="required" type="text" placeholder="first name here">
             </label>
             <label class="lastname">
                 last name*
-                <input id="lname" type="text" placeholder="last name here">
+                <input id="lname" data-toggle="tooltip" title="required" type="text" placeholder="last name here">
             </label>
 
            </div>
@@ -28,23 +78,23 @@
        
         <label class="mail">
             Email Adress*
-            <input id="FEmail" type="text" placeholder="Your name @exmple.com">
+            <input id="FEmail" data-toggle="tooltip" title="required" type="text" placeholder="Your name @exmple.com">
         </label>
     
         <div id="lastform">
             <label class="pass">
                 Password* (Atleast 7 Charecters)
-                <input id="Fpass" type="password" placeholder="Please enter minimum of 7 charecters">
+                <input id="Fpass" data-toggle="tooltip" title="required" type="password" placeholder="Please enter minimum of 7 charecters" required>
             </label>
             <label class="conpass">
                 Conform Password*
-                <input id="lpass" type="password" placeholder="Please reenter your Password">
+                <input id="lpass" data-toggle="tooltip" title="required" type="password" placeholder="Please reenter your Password" required>
             </label>
         </div>
        
     
 
-       <h2>Text message alert(optional)</h2>
+       <h2 class="al" >Text message alert(optional)</h2>
        <div id="secondsubmain">
         <input id="check" type="checkbox">
            <label class="Sms">Do you want to shopper alert form SHOP.COM? (Message and data rates may apply.)
@@ -55,7 +105,7 @@
        <div id="thirdsubmain">
         <label class="conpass">
             Mobile Phone
-            <input type="number" placeholder="Please enter your 10 digit number(i.e 999 999 9999)">
+            <input id="mobiles" type="number" placeholder="Please enter your 10 digit number(i.e 999 999 9999)">
         </label>
        </div>
 
@@ -63,7 +113,7 @@
            <label class="optinal">
                <p>Were you referred by a Friends?</p>
                <span>Enter there Email adreess(optinal)</span>
-               <input type="text">
+               <input id="Reffer" type="text">
            </label>
        </div>
 
@@ -80,7 +130,7 @@
        </div>
 
        <div class="tok">
-        <input id="checkest" type="checkbox">
+        <input id="checkest" type="checkbox" >
         <label class="SweetAlt">you want to sign up for sweet email offers and discounts from MarketAmerica.com and its brands?)
         </label>
        </div>
@@ -99,36 +149,17 @@
 
     
     </div>
+
+    <script>
+        jQuery(document).ready(function(){
+          jQuery('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+    
  
 </body>
 </html>
 
+<script src="create_account.js"></script>
 
-<script>
-document.querySelector("form").addEventListener("submit",myfunction)
-
-UserData=JSON.parse(localStorage.getItem("signupdata"))||[]
-
-function myfunction(){
-    event.preventDefault()
-
-    var data={
-        FirstName:form.fname.value,
-        LastName:form.lname.value,
-        Email:form.FEmail.value,
-        password:form.Fpass.value,
-        conPass:form.lpass.value,
-    }
-    
-    UserData.push(data)
-     console.log(UserData)
-   
-
-
-}
-
-
-
-
-</script>
 
