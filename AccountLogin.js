@@ -21,10 +21,10 @@ document.querySelector("#signform").addEventListener("submit",function(event){
         alert("signin Successfully")
     }
     else if(collect.Mail==Userdata.Email){
-        alert("wrong Mail")
+        alert("wrong password")
     }
     else if(collect.Password == Userdata.password){
-        alert("wrong password")
+        alert("wrong Mail")
     }
     else{
         alert("Create account")

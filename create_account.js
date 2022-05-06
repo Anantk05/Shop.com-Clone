@@ -15,7 +15,11 @@ document.querySelector("#form").addEventListener("submit",function(event){
     if(data.password!=data.conPass){
         alert("the password confirmation does not match")
     }
-    else{
+    // else if(data.password>(Number(7))){
+    //     alert("Char should be above 7")
+    // }
+
+    else {
         localStorage.setItem("signupdata",JSON.stringify(data))
         alert("Sucessfully Created")
     }
