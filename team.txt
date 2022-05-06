@@ -10,7 +10,7 @@
                     -->(Homepage)
 
         3. Anant Kumar
-                    -->(Products_page = mens & womens)
+                    -->(Products_page = menspage & womenspage)
 
         4. Sandhya potadar
                     -->(Signup & Loginpage)
