@@ -1,5 +1,12 @@
 
-// mens_products_data
+            //       Header Exit Cross Button
+
+    document.querySelector("#page_exit_cross_button").addEventListener("click",function(){
+
+        window.location.href="homepage.html"
+    })
+
+            //       mens_products_data
 
 var mensproductdata = [
 
@@ -331,6 +338,8 @@ var mensproductdata = [
 
     displaymens(mensproductdata)
 
+                // Mens Product Data Display Function
+
     function displaymens(data){
 
         document.querySelector("#products_container").innerHTML=null
@@ -380,13 +389,17 @@ var mensproductdata = [
             var button2 = document.createElement("div")
             button2.id= "buying_button"
             button2.innerText = "Buying Options"
+            button2.addEventListener("click",function(){
+                buying_options_fun()
+            })
             buttonbox.append(button1,button2)
     
             product_box.append(image,name,cartimg,seller,offprice_price,cashback,cashbacksign,cashbacktext,buttonbox)
             document.querySelector("#products_container").append(product_box)            
         })
     }
-            // Add To Cart Function
+            //      Add To Cart Function
+
         var cartsdata = JSON.parse(localStorage.getItem("cartsdata")) || []
     function addtocart_fun(el){
 
@@ -412,11 +425,16 @@ var mensproductdata = [
             cartsdata.push(el)
             localStorage.setItem("cartsdata",JSON.stringify(cartsdata))
             alert("Item added successfully. ")
-        }
-        
+        }        
     }
+                    // Buying Options Function
+        
+        function buying_options_fun(){
 
-    // sorting by Price Function
+            window.location.href="cartpage.html"
+        }
+
+        //         sorting by Price Function
 
     document.querySelector("#for_sorting").addEventListener("change",sorting_fun)
 
@@ -437,3 +455,34 @@ var mensproductdata = [
             displaymens(mensproductdata)
         }
     }
+                // Feedback Thanks Function
+
+    document.querySelector("#feedback_thanks").addEventListener("click",function(){
+        var text = document.querySelector("textarea").value
+        if(text!=""){
+
+            alert("Thanks for your Feedback.")
+            document.querySelector("textarea").value=""
+        }
+    
+    })
+
+            //  Sorting by custom price
+
+    document.querySelector("#custom_price_button").addEventListener("click",customsortfun)
+
+    function customsortfun(){
+        
+        var min = document.querySelector("#min_custom_price").value
+        var max = document.querySelector("#max_custom_price").value
+        
+        var customdata = []
+        mensproductdata.forEach(function(el){
+            var price = Math.floor(el.price)
+            if(price>=min && price<=max){
+                customdata.push(el)
+            }
+        })
+        displaymens(customdata)
+    }
+    
