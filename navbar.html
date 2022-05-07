@@ -8,6 +8,7 @@
       <link rel="icon" href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg" type="icon">
       <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="nav.css"> 
+      <link rel="stylesheet" href="navstart.css">
 </head>
 <body>
       <div id="startbar">
@@ -18,7 +19,7 @@
       </div>
       <nav id="nav"> 
             <div id="row1">
-                <DIV> <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt=""></DIV>
+                <DIV> <a href="navbar.html"><img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt=""></a></DIV>
                 <DIV>
                      <input type="text" placeholder="  &nbsp; Search In Shop.com"> 
                      <div><img src="https://img.shop.com/Image/resources/images/icon-search-24px.svg" alt=""></div>
@@ -27,7 +28,7 @@
            </div>
            <div id="row2">
                 <div id="categ">
-                  <p>Select Category</p>    
+                  <h6>Select Category</h6>    
                   <select name="select" id="Select">
                       <option value="Select Category" id="all">All</option>
                       <option value="Men" id="mense">Men's Clothing </option>
@@ -42,13 +43,14 @@
                 </div>
                 <div id="icon">
 
-                     <div class="log1"><a href="sing_in.html">Sign in</a> </div>
-                      <div><a id="account" href=""><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt=""></a></div>
-                      <div class="log1"><a href="">Signup</a> </div>
+                  <div class="log1"><a href="AccountLogin.html">Sign in</a> </div>
+                  <div><a id="account" href=""><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt=""></a></div>
+                  <div class="log2"><a href="create_account.html">Signup</a> </div>
                 </div>
            </div>
       
       </nav>
+      
 </body>
 </html>
 <script src="navbar.js"></script>

@@ -1,7 +1,6 @@
-*{
-      padding: 0px;
-      margin: 0px;
-      font-family: sans-serif;
+body{
+      height: auto;
+      scroll-behavior: smooth;
 }
 #startbar{
       width:100%;
@@ -29,11 +28,14 @@ text-decoration: none;
 }
 
 #nav{
-      height: 120px;
+      height: 130px;
       width: 100%;
-      /* border: 1PX SOLID rgb(241, 0, 0); */
-      background-color:rgba(197, 200, 220, 0.5) ;
+      background-color:rgba(137, 148, 221, 0.5) ;
+      position: sticky;
       
+    top: 0px;
+    transition: 1s;
+    
      
 }
 
@@ -42,11 +44,23 @@ text-decoration: none;
       justify-content: space-between;
 }
 
+#row1>DIV>a>img{
+      height: 100%;
+      width: 100%;
+      margin-left: 5px;
+      margin-top: 5px;
+
+      display: inline;
+      border: 1px s/lid rgb(215, 17, 17);     
+}
 #row1>DIV>img{
       height: 100%;
       width: 100%;
-      /* border: 1px s/lid rgb(0, 0, 0); */     
+      margin-left: -55px;
+      display: inline;
+      border: 1px s/lid rgb(215, 17, 17);     
 }
+
 #row1{
       height: 50%;
       width: 100%;
@@ -82,7 +96,7 @@ text-decoration: none;
       font-weight: 600;
       color: #2d346d;
 }
-select{
+#Select{
      width: 50%;
      /* margin-left: 5px; */
      height: 80%;
@@ -116,7 +130,7 @@ select{
     
       justify-content: space-around;
 }
-.log1{
+.log1,.log2{
       box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
       width: 22%;
       text-align: center;
@@ -124,22 +138,27 @@ select{
      display: flex;
      justify-content: center;
      align-items: center;
-     background-color: rgb(187, 187, 241);
+     background-color: rgb(209, 209, 240);
      text-decoration: none;
+     font-size: 19px;
+     
 
       /* margin-top: 5px; */
 }
-.log1:hover{
-      background-color: #2d346d;
+.log1:hover,.log2:hover{
+      background-color: #535ca3;
       color: white;
       
 
 }
-.log1>a:hover{
+.log1>a:hover,.log2>a:hover{
       color: white;
 }
-.log1>a{
+.log1>a,.log2>a{
       text-decoration: none;
+      margin-left: 5px;
+      color: black;
+     
 }
 #icon>div>a>img{
       width: 35px;
