@@ -30,8 +30,6 @@ body{
     border-top: 1px solid #d5d5d5;
     border-bottom: 2px solid #d5d5d5;
     padding: 15px 0px 15px 20px;
-}
-.sorting_text{
     color: #202340;
     font-size: 14px;
 }
@@ -160,10 +158,10 @@ textarea:focus-visible{
 textarea::placeholder{
     color: #202340;
 }
-#feedback_form>a{
-    text-decoration: none;
+#feedback_form>button{
     font-size: .875rem;
     color: #202340;
+    cursor: pointer;
     padding: 0.75em 15px;
     border-radius: 2px;
     border: 1px solid #202340;
@@ -172,7 +170,7 @@ textarea::placeholder{
     font-weight: 700;
     margin: 30px 30px 5px 40px;
 }
-#feedback_form>a:hover{
+#feedback_form>button:hover{
     background-color: #202340;
     color: white;
 }
@@ -183,10 +181,12 @@ textarea::placeholder{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 12px;
+    height: fit-content;
 }
 #products_container>div{
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     padding-top: 30px;
+    height: fit-content;
 }
 #products_container>div>img:first-child{
     width: 100%;
@@ -282,13 +282,128 @@ img+span{
     border: 1px solid #202340;
     background-color: #202340;
 }
+             /* Media Queries for Products display */
 
 
-
-
-@media all and (min-width: 451px) and (max-width: 750px) {
+@media all and (min-width: 901px) and (max-width: 1150px) {
     #products_container{
-        display: grid;
-    grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
     }
+}
+@media all and (min-width: 551px) and (max-width: 900px) {
+    #products_container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #products_container>div{
+        min-width: 300px;
+    }
+}
+@media all and (min-width: 100px) and (max-width: 550px) {
+    #products_container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #category_list{
+        display: none;
+    }
+    .one_cart_logo{
+        min-width: 270px;
+    }
+    #mainbody{
+        flex-wrap: wrap;
+    }
+    #products_container>div{
+        min-width: 270px;
+    }
+}
+            /* ----------Footer-----------  */
+
+#footer_body{
+    margin-top: 60px;
+    background-color: #f0f1f7;
+}
+.email_subscriber_andlink, .services_and_social_media{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #545871;
+    color: #fff;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #939394;
+}
+.email_subscriber_andlink>div{
+    margin: 10px 15px 10px 15px;
+    font-size: 13px;
+}
+.mypage_link{
+    color: #fff;
+}
+.email_subscriber_andlink>div>input{
+    margin-left: 15px;
+    border-radius: 2px;
+    border: none;
+    font-size: 12px;
+    width: 40ex;
+    margin-top: 0;
+    height: 25px;
+    background-color: #fff;
+    color: #202340;
+}
+.email_subscriber_andlink>div>button{
+    margin-left: -10px;
+    border-radius: 0 2px 2px 0;
+    height: 25px;
+    min-height: 0;
+    border: none;
+    background-color: #f0f1f7;
+    color: #2e2c38;
+    cursor: pointer;
+    margin-bottom: -5px;
+}
+.email_subscriber_andlink>div>button:hover{
+    background-color: rgb(59, 59, 59);
+    color: #fff;
+}
+.services_and_social_media>div{
+    margin: 10px 15px 5px 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.services_and_social_media>div>div{
+    border-right: 1px solid #6C6D70;
+    padding: 0px 5px 0px 5px;
+    font-size: .75rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.services_and_social_media>div>img{
+    width: 25px;
+    margin: 5px;
+}
+.policy{
+    margin-left: 10px;
+    border-bottom: 2px solid #f0f1f7;
+}
+.policy>a{
+    color: #2E2C38;
+    font-size: .75rem;
+}
+.policy>p{
+    font-size: .6875rem;
+    line-height: 10px;
+}
+.footer_awards{
+    width: 55%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer_awards>img{
+    width: 75px;
+    height: 70px;
+    margin: 20px 5px;
+}
+.footer_awards>img:nth-child(7),.footer_awards>img:nth-child(8),.footer_awards>img:nth-child(9){
+    width: 100px;
 }
