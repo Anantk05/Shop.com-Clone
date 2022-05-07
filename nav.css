@@ -1,7 +1,6 @@
-*{
-      padding: 0px;
-      margin: 0px;
-      font-family: sans-serif;
+body{
+      height: auto;
+      scroll-behavior: smooth;
 }
 #startbar{
       width:100%;
@@ -29,11 +28,14 @@ text-decoration: none;
 }
 
 #nav{
-      height: 120px;
+      height: 130px;
       width: 100%;
-      /* border: 1PX SOLID rgb(241, 0, 0); */
-      background-color:rgba(197, 200, 220, 0.5) ;
+      background-color:rgba(137, 148, 221, 0.5) ;
+      position: sticky;
       
+    top: 0px;
+    transition: 1s;
+    
      
 }
 
@@ -42,15 +44,28 @@ text-decoration: none;
       justify-content: space-between;
 }
 
+#row1>DIV>a>img{
+      height: 100%;
+      width: 100%;
+      margin-left: 5px;
+      margin-top: 5px;
+
+      display: inline;
+      border: 1px s/lid rgb(215, 17, 17);     
+}
 #row1>DIV>img{
       height: 100%;
       width: 100%;
-      /* border: 1px s/lid rgb(0, 0, 0); */     
+      margin-left: -55px;
+      display: inline;
+      border: 1px s/lid rgb(215, 17, 17);     
 }
+
 #row1{
       height: 50%;
       width: 100%;
-      border: 1px solid blue;
+      /* border: 1px solid blue; */
+      
     
 }
 #row2{
@@ -58,6 +73,8 @@ text-decoration: none;
       justify-content: space-between;
       align-items: center;
       vertical-align: middle;
+      padding-top: 10px;
+      /* border: 1px solid #000; */
       
 }
 #icon{
@@ -66,33 +83,86 @@ text-decoration: none;
 }
 #categ{
       width: 20%;
-      height: 100%;
-      border: 1px solid green;
+      height: 30px;
+      /* border: 1px solid green; */
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 16px;
+      padding: 0px;
+      margin: 0px;
+}
+#categ:hover{
+      font-weight: 600;
+      color: #2d346d;
+}
+#Select{
+     width: 50%;
+     /* margin-left: 5px; */
+     height: 80%;
+     border-radius: 5px;
+     font-size: 16px;
+     color: #000853;
+     background-color: rgb(209, 206, 220);
+     text-align: center;
+   
 }
 #Homeitem{
       display: flex;
       width: 45%;
-      border: 1px solid rgb(0, 0, 0);
+      /* border: 1px solid rgb(0, 0, 0); */
       height: 100%;
       justify-content: space-between;
       margin-left: 30px;
 }
-#Homeitem>p>a{
-      font-size: 18px;
+#Homeitem>div>a{
+      font-size: 16px;
       font-stretch: 20px;
       font-family: 'Roboto', sans-serif;
-      font-weight: 700;  
+    
       text-decoration: none;  
       color: rgb(0, 0, 0);
         }
 #icon{
       width: 30%;
-      border: 1px solid green;
-      height: 100%;
+      /* border: 1px solid green; */
+      height: auto;
+    
       justify-content: space-around;
 }
-#icon>img{
-      width: 40px;
+.log1,.log2{
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      width: 22%;
+      text-align: center;
+      border-radius: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: rgb(209, 209, 240);
+     text-decoration: none;
+     font-size: 19px;
+     
+
+      /* margin-top: 5px; */
+}
+.log1:hover,.log2:hover{
+      background-color: #535ca3;
+      color: white;
+      
+
+}
+.log1>a:hover,.log2>a:hover{
+      color: white;
+}
+.log1>a,.log2>a{
+      text-decoration: none;
+      margin-left: 5px;
+      color: black;
+     
+}
+#icon>div>a>img{
+      width: 35px;
+      text-decoration: none;
 }
 #categ>img{
       width: 30px;
@@ -108,7 +178,7 @@ text-decoration: none;
       height: 80%;
       margin-top: 5px;
       direction: none;
-      border: 1px solid black;
+      /* border: 1px solid black; */
       font-size: 20px;
 }
 #row1>div:nth-child(2)>div>img{
@@ -135,7 +205,7 @@ text-decoration: none;
             align-items: center;
             vertical-align: middle;
             margin: auto;
-            border: 1px solid #000;
+            /* border: 1px solid #000; */
             
       }
       #startbar{
@@ -161,7 +231,7 @@ text-decoration: none;
       #row1{
             height: 50%;
             width: 100%;
-            border: 1px solid blue;
+            /* border: 1px solid blue; */
           
       }
       }

@@ -5,6 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
+      <link rel="stylesheet" href="nav.css">
       <style>
            
             #container{
@@ -13,7 +14,6 @@
                   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                   border-radius: 10px;
                   margin: auto;
-                  /* text-align: center; */
                   margin-top: 30px;
                  padding: 40px 10px 40px 10px;
                   /* border: 1px solid rgb(126, 132, 194); */
@@ -92,6 +92,39 @@
       </style>
 </head>
 <body>
+      <nav id="nav"> 
+            <div id="row1">
+                <DIV> <a href="navbar.html"><img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt=""></a></DIV>
+                <DIV>
+                     <input type="text" placeholder="  &nbsp; Search In Shop.com"> 
+                     <div><img src="https://img.shop.com/Image/resources/images/icon-search-24px.svg" alt=""></div>
+            </DIV>
+                <DIV><img src="https://img.shop.com/Image/header2013/motives-usa-can-100110-sculpting-concealer-banners-header1650486339409.svg" alt=""></DIV>
+           </div>
+           <div id="row2">
+                <div id="categ">
+                  <h6>Select Category</h6>    
+                  <select name="select" id="Select">
+                      <option value="Select Category" id="all">All</option>
+                      <option value="Men" id="mense">Men's Clothing </option>
+                      <option value="Women" id="womense">Women's </option>
+                </select></div>
+                <div id="Homeitem"> 
+                      <div><a href="https://www.shop.com/info/our-brands?hsh=1" target=" _blank">Exclusive Brands</a> </div>
+                      <div><a href="https://www.shop.com/stores-a-z?hsh=2" target=" _blank">Stores</a> </div>
+                      <div><a href="https://www.shop.com/hot-deals?hsh=3" target=" _blank">Deals</a> </div>
+                      <div><a href="https://www.shop.com/shoptravel?tsid=1&hsh=4" target=" _blank">SHOP Travel</a> </div>
+                      <div><a href="https://www.shop.com/departments.xhtml?hsh=5" target=" _blank">Departments</a> </div>
+                </div>
+                <div id="icon">
+
+                  <div class="log1"><a href="AccountLogin.html">Sign in</a> </div>
+                  <div><a id="account" href=""><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt=""></a></div>
+                  <div class="log2"><a href="create_account.html">Signup</a> </div>
+                </div>
+           </div>
+      
+      </nav>
       <div id="container">
              <h1>Complet Payment</h1>
              <div id="details">
@@ -125,7 +158,7 @@
       prize1.innerText="Total Amount : $ "+ getdata.totalprize
 
       var ste=document.querySelector("#st")
-      ste.innerText="Payment Status : "+"  Successfull"
+      ste.innerText="Payment Status : "+  "Successfull"
 
       var tital=document.querySelector("h1")
       tital.innerText='Payment Successful !',
@@ -136,3 +169,4 @@
     
      
 </script>
+<script src="navbar.js"></script>
