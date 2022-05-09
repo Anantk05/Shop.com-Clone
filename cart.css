@@ -1,0 +1,321 @@
+body{
+      position: relative;
+      scroll-behavior: smooth;
+}
+#container{
+      width: 96%;
+      margin: auto;
+      /* border: 1px solid black; */
+      height: auto;
+      display: flex;
+    
+      padding: 0px;
+      font-family: sans-serif;
+
+}
+
+
+                      /* leftside of the block */
+
+#left{
+      width: 80%;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  
+}
+#ltital{
+       width: 100%;
+       height: 50px;
+       /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+       font-size: 30px;
+       text-align: center;
+      margin-top: 20px;
+      border-radius: 10px;
+      border-bottom: 1px solid rgb(28, 5, 5);
+}
+#proboundary{
+      width: 100%;
+      margin: auto;
+      height: 600px;
+      overflow-x: hidden; /* Hide horizontal scrollbar */
+      overflow-y: scroll; /* Add vertical scrollbar */
+
+}
+.Probox{
+      width:100%;
+      margin: auto;
+      height: 300px;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+      display: flex;
+      margin-bottom: 10px;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      margin-top: 25px;
+      border-bottom: 1px solid rgb(10, 0, 0);
+}
+.proleft{
+      width: 40%;
+
+      height: 100%;
+      border-right: 1px solid rgb(208, 12, 12);
+
+}
+.proright{
+      width: 50%;
+      height: 300px;
+      padding-left: 35px;
+    
+}
+.rnameseller{
+      font-size: 20px;
+
+}
+
+/* rigth side box data */
+p{
+      margin-bottom: -5px;
+}
+
+.pricer{
+
+      margin-top: 30px;
+      margin-bottom: 1px;
+      font-size: 24px;
+}
+
+     /* delete button  */
+
+.delcart{
+ 
+      margin-left: 30%;
+      width: 18%;
+      height: 50px;
+      border-radius: 20px;
+      margin-top: 10px;
+      background-color: rgb(212, 213, 241);
+
+}
+
+
+
+
+
+
+
+               
+
+
+/* right side of the block */
+#right{
+      width: 40%;
+      /* background-color: rgb(216, 209, 240); */
+      /* border: 1px solid rgb(225, 29, 29); */
+      height: 80%;
+      margin-left: 30px;
+}
+
+#ordersub{
+      width: 90%;
+      border: 1px solid #000;
+      height: 350px;
+      margin: auto;
+      margin-top: 50px;
+      background-color: #fff;
+      text-align: center;
+      /* display: flex; */
+}
+#ordersub>p{
+      font-size: 17px;
+      color: rgb(182, 21, 21);
+}
+#coupen{
+      /* border: 1px solid #000; */
+      height: 32px;
+      width: 80%;
+      margin: auto;
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+}
+ #coupen>input{
+      width: 65%;
+      height: 80%;
+      font-size: 16px;
+      text-align: center;
+      border-radius: 5px;
+
+
+}
+#coupen>button{
+     /* margin-left: -10%; */
+     width: 30%;
+     height: 100%;
+     font-size: 18px;
+     border-radius: 10px;
+     background-color: rgb(108, 38, 38);
+     color: white;
+}
+
+
+#flexprice{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 400px;
+height: 50px;
+box-sizing: border-box;
+margin-top: 20px;
+
+}
+#flexprice>p{
+      margin-top: -5px;
+      font-size: 30px;
+}
+#flexprice>h2{
+      box-sizing: border-box;
+      overflow: hidden;
+      width: 95px;
+}
+#showtotal{
+      font-size: 30px;
+}
+#tax{
+      margin-top: 5px;
+      margin-bottom: 50px;
+}
+#proceed{
+      width: 100%;
+      height: 60px;
+      /* margin-top: 15px; */
+
+      padding-top: 2%;
+      padding-bottom: 2%;
+      margin-top: 20px;
+      
+      display: flex;
+      justify-content: center;
+      
+     
+}
+
+
+#proceed>div>a>input{
+   /* border: 1px solid #000; */
+width: 100%;
+background-color: rgb(57, 115, 16);
+      color: white;
+      height: 100%;
+      font-size: 16px;
+      border-radius: 10px;
+}
+
+
+#proceed>div{
+      width: 60%;
+      margin: auto;
+      /* padding: 5px; */
+      /* border: 1px solid #000; */
+      height: 50px;
+}
+
+#continue{
+      width: 100%;
+      height: 70px;
+      /* border: 1px solid #000; */
+      display: flex;
+      justify-content: center;
+      /* margin-top: 20px; */
+      margin-bottom: 50px;
+      
+}
+#continue>div{
+      width: 90%;
+      margin: auto;
+      height: 50px;
+
+}
+
+#continue>div>button{
+      width: 100%;
+      height: 100%;
+      color: white;
+      font-size: 18px;
+      border-radius: 10px;
+      background-color: rgb(43, 43, 114);
+}
+
+
+
+
+
+@media all and (min-width:400px) and (max-width:750px){
+
+      #container{
+            width: 80%;
+          
+        
+           margin: auto;
+            display: flex;
+           
+            flex-wrap: wrap;
+      }
+      #left{
+            width: 100%;
+            border: 1px solid #000;
+        
+      }
+      #right{
+            width: 100%;
+            background-color: rgb(216, 209, 240);
+            border: 1px solid rgb(225, 29, 29);
+            height: 80%;
+            margin-left: 30px;
+            margin: auto;
+      }
+
+      #continue>div>button{
+            width: 100%;
+           
+            font-size: 15px;
+    
+           
+      }
+      #proceed>div>a>input{
+            /* border: 1px solid #000; */
+         width: 100%;
+         background-color: rgb(48, 110, 4);
+               color: white;
+               height: 100%;
+               font-size: 12px;
+            
+         }
+         #ortotal{
+            width: 80%;
+            margin: auto;
+            font-size:12px;
+            height: 50px;
+           
+      }
+
+      .Probox{
+            width:90%;
+            margin: auto;
+            height: 200px;
+            border: 1px solid #000;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 5px;
+      }
+      .proleft{
+            width: 100%;
+            border: 1px solid #000;
+            height: 40%;
+      
+      }
+      .proright{
+            width: 100%;
+            border: 1px solid rgb(255, 7, 7);
+            height: 60%;
+      }
+}

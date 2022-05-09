@@ -1,0 +1,12 @@
+#startbar{
+      width:100%;
+      height: 60px;
+      background-color: #202340;
+      text-align: center;
+      color: white;
+   
+}
+*{
+      margin: 0px;
+      padding: 0px;
+}
