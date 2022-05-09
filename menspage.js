@@ -122,7 +122,7 @@ var mensproductdata = [
         name: "Disney Mickey Mouse Hawaii Aloha Mickey Men's T-Shirt",
         imageurl: "https://img.shop.com/Image/250000/254500/254570/products/1666740432.jpg?size=400x400",
         seller: "Sold by Seven Times Six",
-        price: "18.25 - $21.95",
+        price: "18.25",
         offprice: "",
         cashback: "+ up to $0.44 / 2%",
         type: "tshirt"
@@ -266,7 +266,7 @@ var mensproductdata = [
         name: "Member's Mark Men's Long Sleeve Thermal Crew Neck Shirt",
         imageurl: "https://img.shop.com/Image/290000/290600/290680/products/1919208594.jpg?size=400x400",
         seller: "Sold by eWirelessGear",
-        price: "11.98 - $16.30",
+        price: "11.98",
         offprice: "",
         cashback: "+ up to $0.98 / 6%",
         type: "tshirt"
@@ -395,7 +395,7 @@ var mensproductdata = [
             buttonbox.append(button1,button2)
     
             product_box.append(image,name,cartimg,seller,offprice_price,cashback,cashbacksign,cashbacktext,buttonbox)
-            document.querySelector("#products_container").append(product_box)            
+            document.querySelector("#products_container").append(product_box)      
         })
     }
             //      Add To Cart Function
