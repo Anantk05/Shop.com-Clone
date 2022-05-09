@@ -18,3 +18,6 @@ function completpayment(){
  alert("Payment Sucessful")
      window.location.href="afterp.html" 
 }
+
+var getdata=localStorage.getItem("paydata")
+document.querySelector("#payamount").value=getdata

@@ -12,7 +12,7 @@
   <body>
     <nav id="nav"> 
       <div id="row1">
-        <DIV> <a href="navbar.html"><img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt=""></a></DIV>
+          <DIV> <a href="homepage.html"><img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt=""></a></DIV>
           <DIV>
                <input type="text" placeholder="  &nbsp; Search In Shop.com"> 
                <div><img src="https://img.shop.com/Image/resources/images/icon-search-24px.svg" alt=""></div>
@@ -21,11 +21,11 @@
      </div>
      <div id="row2">
           <div id="categ">
-            <p>Select Category</p>    
+            <h6>Select Category</h6>    
             <select name="select" id="Select">
                 <option value="Select Category" id="all">All</option>
                 <option value="Men" id="mense">Men's Clothing </option>
-                <option value="Women" id="womense">Women's </option>
+                <option value="Women" id="womense">Women's Clothing</option>
           </select></div>
           <div id="Homeitem"> 
                 <div><a href="https://www.shop.com/info/our-brands?hsh=1" target=" _blank">Exclusive Brands</a> </div>
@@ -36,9 +36,8 @@
           </div>
           <div id="icon">
 
-             
             <div class="log1"><a href="AccountLogin.html">Sign in</a> </div>
-            <div><a id="account" href=""><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt=""></a></div>
+            <div><a id="account" href="homepage.html"><img src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg" alt=""></a></div>
             <div class="log2"><a href="create_account.html">Signup</a> </div>
           </div>
      </div>
@@ -53,18 +52,41 @@
 
           </div>
         
-<footer>tydj</footer>
+
 
 
       </div>
 
       <div id="right">
-        <div id="ordersub"></div>
+        <div id="ordersub">
+
+          <p>Add Gift Card or Promo code </p>
+
+          <div id="coupen">
+            <input type="text" placeholder="Enter Code Here">
+            <button> Apply</button>
+          </div>
+
+          <div id="flexprice">
+            <p>Subtotal :- </p>
+            <h2 id="showtotal">
+            </h2>
+          </div>
+
+          <p id="tax">*Inclusive of All taxes</p>
+
+          <p id="massagebox">
+            
+            <h2 id="cong"></h2>
+            <h3 id="massage"></h3>
+          </p>
+         
+        </div>
 
         <div id="proceed">
           <div>
             <a href="payment.html">
-              <input type="submit" value="Proceed to Checkout" />
+              <input type="submit" class="payment" value="Proceed to Checkout" />
             </a>
           </div>
         </div>

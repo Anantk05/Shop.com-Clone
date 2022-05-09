@@ -36,7 +36,6 @@ body{
       width: 100%;
       margin: auto;
       height: 600px;
-      /* border: 1px solid #000; */
       overflow-x: hidden; /* Hide horizontal scrollbar */
       overflow-y: scroll; /* Add vertical scrollbar */
 
@@ -96,36 +95,14 @@ p{
       background-color: rgb(212, 213, 241);
 
 }
-#ortotal{
-      width: 80%;
-      margin: auto;
-      font-size: 22px;
-      height: 50px;
-      /* border: 1px solid #000; */
-      display: flex;
-      margin-top: 20px;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 20px;
-     
-}
-#showtotal{
-      width: 20%;
-      border: 1px solid #000;
-      height:40px;
-      margin-left: 10px;
-}
+
+
+
+
+
+
 
                
-
-
-
-
-
-
-
-
-
 
 
 /* right side of the block */
@@ -138,15 +115,75 @@ p{
 }
 
 #ordersub{
-      width: 80%;
+      width: 90%;
       border: 1px solid #000;
-      height: 180px;
+      height: 350px;
       margin: auto;
       margin-top: 50px;
       background-color: #fff;
+      text-align: center;
+      /* display: flex; */
+}
+#ordersub>p{
+      font-size: 17px;
+      color: rgb(182, 21, 21);
+}
+#coupen{
+      /* border: 1px solid #000; */
+      height: 32px;
+      width: 80%;
+      margin: auto;
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+}
+ #coupen>input{
+      width: 65%;
+      height: 80%;
+      font-size: 16px;
+      text-align: center;
+      border-radius: 5px;
+
+
+}
+#coupen>button{
+     /* margin-left: -10%; */
+     width: 30%;
+     height: 100%;
+     font-size: 18px;
+     border-radius: 10px;
+     background-color: rgb(108, 38, 38);
+     color: white;
 }
 
 
+#flexprice{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 400px;
+height: 50px;
+box-sizing: border-box;
+margin-top: 20px;
+
+}
+#flexprice>p{
+      margin-top: -5px;
+      font-size: 30px;
+}
+#flexprice>h2{
+      box-sizing: border-box;
+      overflow: hidden;
+      width: 95px;
+}
+#showtotal{
+      font-size: 30px;
+}
+#tax{
+      margin-top: 5px;
+      margin-bottom: 50px;
+}
 #proceed{
       width: 100%;
       height: 60px;
@@ -154,7 +191,7 @@ p{
 
       padding-top: 2%;
       padding-bottom: 2%;
-      margin-top: 50px;
+      margin-top: 20px;
       
       display: flex;
       justify-content: center;

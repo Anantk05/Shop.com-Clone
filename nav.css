@@ -1,5 +1,5 @@
 body{
-      height: auto;
+  
       scroll-behavior: smooth;
 }
 #startbar{
@@ -30,7 +30,7 @@ text-decoration: none;
 #nav{
       height: 130px;
       width: 100%;
-      background-color:rgba(137, 148, 221, 0.5) ;
+      background-color:rgba(161, 170, 224, 0.5) ;
       position: sticky;
       
     top: 0px;
@@ -38,8 +38,10 @@ text-decoration: none;
     
      
 }
-
-#row1{
+h6{
+      font-size: 20px;
+}
+      #row1{
       display: flex;
       justify-content: space-between;
 }
@@ -132,7 +134,7 @@ text-decoration: none;
 }
 .log1,.log2{
       box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-      width: 22%;
+      width: 100px;
       text-align: center;
       border-radius: 50px;
      display: flex;
