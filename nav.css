@@ -30,10 +30,11 @@ text-decoration: none;
 #nav{
       height: 130px;
       width: 100%;
-      background-color:rgba(161, 170, 224, 0.5) ;
+      background-color: #f0f1f7;
       position: sticky;
       top: 0px;
       transition: 1s;
+      box-shadow: 0 3px 4px rgb(0 0 0 / 20%);;
 }
 
 h6{
