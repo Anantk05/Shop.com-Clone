@@ -32,12 +32,10 @@ text-decoration: none;
       width: 100%;
       background-color:rgba(161, 170, 224, 0.5) ;
       position: sticky;
-      
-    top: 0px;
-    transition: 1s;
-    
-     
+      top: 0px;
+      transition: 1s;
 }
+
 h6{
       font-size: 20px;
 }
