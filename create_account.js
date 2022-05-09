@@ -21,7 +21,7 @@ document.querySelector("#form").addEventListener("submit",function(event){
 
     else {
         localStorage.setItem("signupdata",JSON.stringify(data))
-        alert("Sucessfully Created")
+        window.location.href="successfully.html"   
     }
     
 

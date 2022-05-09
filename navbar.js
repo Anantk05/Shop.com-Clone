@@ -33,7 +33,7 @@ console.log(result)
 var logindatasave=JSON.parse(localStorage.getItem("logindata"))
 if(logindatasave!==null){
       var user=document.querySelector(".log1")
-      user.innerHTML=logindatasave.FirstName+`<a href="singinforhomepage.html"><img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt=""></a>`;
+      user.innerHTML=logindatasave.FirstName+`<a href="HomeSign.html"><img src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg" alt=""></a>`;
 
       var cart=document.querySelector(".log2")
       cart.innerHTML="Cart"+`<a href="cartpage.html" target="_blank"><img  src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg" alt=""></a>`
