@@ -19,6 +19,7 @@ document.querySelector("#signform").addEventListener("submit",function(event){
     if(collect.Mail==Userdata.Email && collect.Password == Userdata.password){
         localStorage.setItem("logindata",JSON.stringify(Userdata))
         alert("signin Successfully")
+        window.location.href="homepage.html"
     }
     else if(collect.Mail==Userdata.Email){
         alert("wrong password")
