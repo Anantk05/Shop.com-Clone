@@ -166,13 +166,7 @@ margin: auto;
 
 /* here */
 
-/* here */
-
-#header{
-    position: relative;
-}
 #submain{
-    position: absolute;
     top:30%;
     left: 22%;
   
@@ -311,10 +305,7 @@ margin: auto;
 /* footer */
 
 #footer_body{
-    /* align-self: baseline; */
-    /* position: relative; */
-    /* margin-bottom: -50%; */
-    margin-top: 65%;
+    margin-top: 40px;
     background-color: #f0f1f7;
 }
 .email_subscriber_andlink, .services_and_social_media{
