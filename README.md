@@ -24,4 +24,27 @@ SHOP.COM is a new kind of shopping comparison site that offers the most comprehe
 - After successfull transaction they can see their payment details at afterpaymentpage.
 
 
+
+## Homepage
+
+<img width="720" align="center" src="./redmefileimgaes/h1.png" alt="itsdipaks" />
+<img width="720" align="center" src="./redmefileimgaes/h2.png" alt="itsdipaks" />
+<img width="720" align="center" src="./redmefileimgaes/h3.png" alt="itsdipaks" />
+
+## Signup/Sign In pages
+
+<img width="720" align="center" src="./redmefileimgaes/signin.png" alt="itsdipaks" />
+<img width="720" align="center" src="./redmefileimgaes/signup.png" alt="itsdipaks" />
+
+## Checkout-Add to Cart
+<img width="720" align="center" src="./redmefileimgaes/pro.png" alt="itsdipaks" />
+<img width="720" align="center" src="./redmefileimgaes/cart.png" alt="itsdipaks" />
+<img width="720" align="center" src="./redmefileimgaes/payment.png" alt="itsdipaks" />
+
+
+
+
+
+
+
 #### That's all Thank you.
